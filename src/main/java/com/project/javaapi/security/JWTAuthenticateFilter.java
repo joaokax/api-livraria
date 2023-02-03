@@ -54,7 +54,6 @@ public class JWTAuthenticateFilter extends UsernamePasswordAuthenticationFilter 
                                             FilterChain chain,
                                             Authentication authResult) throws IOException {
 
-
         User person = (User) authResult.getPrincipal();
         String token = JWT.create()
                 .withSubject(person.getUsername())
