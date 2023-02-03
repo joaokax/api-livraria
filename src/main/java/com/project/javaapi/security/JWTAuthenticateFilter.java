@@ -72,7 +72,6 @@ public class JWTAuthenticateFilter extends UsernamePasswordAuthenticationFilter 
         response.getWriter().write(token);
         response.addHeader("Token Expiration", expiration);
         response.getWriter().flush();
-//        response.getWriter().write(TOKEN_EXPIRATION);
-//        response.getWriter().flush();
+
     }
 }
